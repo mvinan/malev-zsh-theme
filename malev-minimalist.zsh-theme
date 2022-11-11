@@ -2,7 +2,7 @@ function directory() {
     local color="%{$fg_no_bold[cyan]%}";
     local directory="${PWD/#$HOME/~}";
     local color_reset="%{$reset_color%}";
-    echo "🗂 ${color}${directory}${color_reset}";
+    echo "${color}${directory}${color_reset}";
 }
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[red]%}[%{$fg_no_bold[yellow]%}";
